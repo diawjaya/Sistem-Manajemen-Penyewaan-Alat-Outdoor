@@ -62,10 +62,6 @@ public class SistemAlatOutDoor {
                     break;
 
                 case 8:
-                    cariAlat();
-                    break;
-
-                case 9:
                     System.out.println();
                     System.out.println("Program selesai.");
                     break;
@@ -75,7 +71,7 @@ public class SistemAlatOutDoor {
                     System.out.println("Pilihan tidak tersedia.");
             }
 
-        } while (pilihan != 9);
+        } while (pilihan != 8);
     }
 
     public static void tampilkanMenu() {
@@ -91,8 +87,7 @@ public class SistemAlatOutDoor {
         System.out.println("5. Tambah Penyewaan");
         System.out.println("6. Lihat Daftar Penyewaan");
         System.out.println("7. Pengembalian Alat");
-        System.out.println("8. Cari Alat");
-        System.out.println("9. Keluar");
+        System.out.println("8. Keluar");
         System.out.println("========================================");
     }
 
@@ -418,55 +413,6 @@ public class SistemAlatOutDoor {
         System.out.println("Status penyewaan: Sudah Dikembalikan");
     }
 
-    public static void cariAlat() {
-
-        System.out.println();
-        System.out.println("=== CARI ALAT ===");
-
-        System.out.print("Masukkan kode alat: ");
-        String kode = input.nextLine();
-
-        AlatOutdoor alat = cariAlatByKode(kode);
-
-        if (alat == null) {
-            System.out.println("Alat tidak ditemukan.");
-            return;
-        }
-
-        System.out.println();
-        System.out.println("Data alat ditemukan.");
-        System.out.println("----------------------------------------");
-        System.out.println("Kode Alat       : " + alat.getKodeAlat());
-        System.out.println("Nama Alat       : " + alat.getNamaAlat());
-        System.out.println("Jenis Alat      : " + alat.getJenisAlat());
-        System.out.println("Harga Sewa/Hari : "
-                + formatRupiah(alat.getHargaSewa()));
-        System.out.println("Stok            : " + alat.getStok());
-
-        if (alat instanceof Tenda) {
-
-            Tenda tenda = (Tenda) alat;
-
-            System.out.println("Kapasitas       : "
-                    + tenda.getKapasitas() + " orang");
-
-            System.out.println("Jenis Tenda     : "
-                    + tenda.getJenisTenda());
-
-        } else if (alat instanceof SleepingBag) {
-
-            SleepingBag sleepingBag = (SleepingBag) alat;
-
-            System.out.println("Bahan           : "
-                    + sleepingBag.getBahan());
-
-            System.out.println("Ukuran          : "
-                    + sleepingBag.getUkuran());
-        }
-
-        System.out.println("----------------------------------------");
-    }
-
     public static AlatOutdoor cariAlatByKode(String kode) {
 
         for (AlatOutdoor alat : daftarAlat) {
@@ -519,3 +465,4 @@ public class SistemAlatOutDoor {
         return format.format(angka);
     }
 }
+// hmmmm
