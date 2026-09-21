@@ -2,8 +2,10 @@
 
 ## Identitas Mahasiswa
 
-**Nama:** Dhiyya Rizky Akhmad Wijaya  
+**Nama:** Dhiyya Rizky Akhmad Wijaya 
+
 **NIM:** 2509116042
+
 **Mata Kuliah:** Pemrograman Berorientasi Objek (PBO)
 
 ---
@@ -116,4 +118,24 @@ public SleepingBag(String kodeAlat, String namaAlat, double hargaSewa, int stok,
 `super()` digunakan untuk menginisialisasi atribut yang berasal dari class `AlatOutdoor`, sedangkan atribut khusus seperti `kapasitas`, `jenisTenda`, `bahan`, dan `ukuran`
 diinisialisasi pada masing-masing sub-class.
 
-<img width="244" height="179" alt="image" src="https://github.com/user-attachments/assets/8fa0e2b7-11ae-4397-ae2a-a6e4f7ab9193" />
+## Screenshots
+
+### Menu utama dan manajemen alat
+<img width="170" height="257" alt="image" src="https://github.com/user-attachments/assets/b97dbde6-291b-4f55-a0c9-dec2ff5e476b" />
+
+<img width="164" height="92" alt="image" src="https://github.com/user-attachments/assets/bd92c23b-a8d8-454e-b726-2554c1267f86" />
+
+
+### Tambah dan Daftar Penyewa
+<img width="139" height="83" alt="image" src="https://github.com/user-attachments/assets/04d344ba-435f-42f3-81c9-bf2123db6be9" />
+
+<img width="164" height="82" alt="image" src="https://github.com/user-attachments/assets/b3a3c68d-657f-4ed9-a838-d0cd5cfd0780" />
+
+
+### Fitur Penyewaan dan Pengembalian
+<img width="141" height="131" alt="image" src="https://github.com/user-attachments/assets/3ed5cfce-ebe9-422b-ae4a-ff39bccd12df" />
+
+<img width="158" height="70" alt="image" src="https://github.com/user-attachments/assets/0a28e430-1531-481f-9a8f-43ff3a18d474" />
+
+
+
