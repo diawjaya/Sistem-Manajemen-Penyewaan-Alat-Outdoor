@@ -136,3 +136,54 @@ diinisialisasi pada masing-masing sub-class.
 <img width="141" height="131" alt="image" src="https://github.com/user-attachments/assets/3ed5cfce-ebe9-422b-ae4a-ff39bccd12df" />
 
 <img width="158" height="70" alt="image" src="https://github.com/user-attachments/assets/0a28e430-1531-481f-9a8f-43ff3a18d474" />
+
+
+## Alur Program
+
+1. Jalankan program melalui class `SistemAlatOutDoor`.
+
+2. Program menampilkan menu utama yang berisi beberapa pilihan, seperti:
+   - Tambah Alat Outdoor
+   - Tampilkan Daftar Alat
+   - Tambah Penyewa
+   - Tampilkan Daftar Penyewa
+   - Penyewaan Alat
+   - Pengembalian Alat
+   - Tampilkan Daftar Penyewaan
+   - Keluar
+
+3. Pengguna memilih menu sesuai kebutuhan menggunakan nomor pilihan.
+
+4. Pada menu **Tambah Alat Outdoor**, pengguna dapat memasukkan data alat seperti kode alat, nama alat, harga sewa, stok, dan jenis alat.
+
+5. Program menyediakan dua jenis alat outdoor, yaitu **Tenda** dan **Sleeping Bag**. Kedua jenis tersebut merupakan turunan dari class `AlatOutdoor`.
+
+6. Data alat yang berhasil ditambahkan akan disimpan ke dalam `ArrayList`.
+
+7. Pada menu **Tambah Penyewa**, pengguna memasukkan data penyewa seperti ID penyewa dan nama penyewa. Data penyewa kemudian disimpan ke dalam `ArrayList`.
+
+8. Pada menu **Penyewaan Alat**, pengguna memasukkan ID penyewa, kode alat, dan jumlah hari penyewaan.
+
+9. Program memeriksa apakah data penyewa dan alat tersedia. Program juga memeriksa apakah stok alat masih tersedia.
+
+10. Jika semua data valid dan stok tersedia, program menghitung total harga sewa berdasarkan harga alat dan jumlah hari penyewaan.
+
+11. Setelah transaksi berhasil, stok alat akan berkurang sesuai jumlah alat yang disewa dan data transaksi disimpan ke dalam `ArrayList`.
+
+12. Pada menu **Pengembalian Alat**, pengguna memasukkan data penyewaan yang akan dikembalikan.
+
+13. Program memproses pengembalian alat, menambah kembali stok alat, dan mengubah status penyewaan menjadi **Sudah Dikembalikan**.
+
+14. Pada menu **Daftar Alat**, pengguna dapat melihat seluruh alat outdoor yang telah tersimpan.
+
+15. Pada menu **Daftar Penyewa**, pengguna dapat melihat seluruh data penyewa yang telah tersimpan.
+
+16. Pada menu **Daftar Penyewaan**, pengguna dapat melihat data transaksi penyewaan yang telah dilakukan.
+
+17. Program menggunakan `if-else` untuk melakukan pengecekan dan menentukan proses berdasarkan pilihan pengguna.
+
+18. Program menggunakan looping untuk menampilkan data dan menjalankan menu utama secara berulang.
+
+19. Program terus berjalan sampai pengguna memilih menu **Keluar**.
+
+20. Setelah memilih menu **Keluar**, program berhenti dan menampilkan pesan bahwa program telah selesai.
